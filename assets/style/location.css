@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700");
+
+body {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  height: 100%;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/pickle.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+/* #background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/pickle.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+} */
+
+#mainpage {
+  height: 200px;
+}
+
+footer {
+  text-align: center;
+  background-color: white;
+  padding-top: 10px;
+  opacity: 0.9;
+}
+.navbar {
+  background: none;
+}
+#navbarSupportedContent {
+  font-size: xx-large;
+
+  color: white;
+  width: 100%;
+}
+.nav-link:active {
+  background-color: #04bab5;
+}
+
+.nav-link {
+  color: white !important;
+  transition: transform 0.2s;
+}
+
+.nav-link:hover {
+  background-color: rgb(255, 126, 115);
+  color: #5d5c5c !important;
+  transform: scale(1.2);
+}
