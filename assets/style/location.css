@@ -58,3 +58,7 @@ footer {
   color: #5d5c5c !important;
   transform: scale(1.2);
 }
+
+#locations {
+  height: 70px;
+}
