@@ -206,3 +206,11 @@ h3 {
 h3 {
   color: white;
 }
+
+.detailsDiv {
+  margin: auto;
+}
+
+.textDiv {
+  padding: 8px;
+}

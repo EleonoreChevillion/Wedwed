@@ -195,56 +195,40 @@ function showContent() {
     document.getElementById(element.number).onclick = function() {
       $(".locations").empty();
       topFunction();
-      var detailsDiv = $("<div>");
-      detailsDiv.addClass("details");
 
       var detailsName = $("<h1>");
       detailsName.text(element.name);
-      detailsName.addClass("row");
-      $(detailsDiv).append(detailsName);
-
-      var secondRow = $("<div>");
-      secondRow.addClass("row");
-      $(detailsDiv).append(secondRow);
-
-      var imgDiv = $("<div>");
-      imgDiv.addClass("images col-lg-6");
-      $(secondRow).append(imgDiv);
+      $(".firstRow").append(detailsName);
 
       var placeImg = $("<img>");
       placeImg.attr("src", element.pic6);
       placeImg.addClass("detailsImg");
-      $(imgDiv).append(placeImg);
+      $(".imgDiv").append(placeImg);
       var placeImg = $("<img>");
       placeImg.attr("src", element.pic2);
       placeImg.addClass("detailsImg");
-      $(imgDiv).append(placeImg);
+      $(".imgDiv").append(placeImg);
       var placeImg = $("<img>");
       placeImg.attr("src", element.pic3);
       placeImg.addClass("detailsImg");
-      $(imgDiv).append(placeImg);
+      $(".imgDiv").append(placeImg);
       var placeImg = $("<img>");
       placeImg.attr("src", element.pic4);
       placeImg.addClass("detailsImg");
-      $(imgDiv).append(placeImg);
+      $(".imgDiv").append(placeImg);
       var placeImg = $("<img>");
       placeImg.attr("src", element.pic5);
       placeImg.addClass("detailsImg");
-      $(imgDiv).append(placeImg);
+      $(".imgDiv").append(placeImg);
       var placeImg = $("<img>");
       placeImg.attr("src", element.pic1);
       placeImg.addClass("detailsImg");
-      $(imgDiv).append(placeImg);
+      $(".imgDiv").append(placeImg);
 
-      var textDiv = $("<div>");
-      textDiv.addClass("col-lg-6");
-      $(secondRow).append(textDiv);
       var detName = $("<h3>");
       detName.text("Advantages");
-      $(textDiv).append(detName);
-      var mapDiv = $("<div>");
-      mapDiv.attr("id", "map");
-      $(textDiv).append(mapDiv);
+      $(".textDiv").append(detName);
+
       initMap();
       function initMap() {
         // The location of Uluru
@@ -260,8 +244,6 @@ function showContent() {
 
       document.getElementById("map").style.overflow = "scroll";
       document.getElementById("map").style.position = "static";
-
-      $(".container").append(detailsDiv);
     };
   });
 }
