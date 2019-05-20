@@ -204,7 +204,7 @@ h3 {
 }
 
 h3 {
-  color: white;
+  color:#5d5c5c ;
 }
 
 .detailsDiv {
@@ -213,4 +213,23 @@ h3 {
 
 .textDiv {
   padding: 8px;
+}
+
+.btn6, .btn6:link, .btn6:visited {
+  padding: 13px 0;
+  border: 1px solid white;
+  color:  rgb(255, 126, 115);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: all .2s ease-in-out;
+  width: 80px;
+}
+  
+  .btn6:hover {
+    background: #5d5c5c;
+    border: 1px solid white;
+    color: rgb(255, 126, 115);
+    border-radius: 30px;
+  }
 }

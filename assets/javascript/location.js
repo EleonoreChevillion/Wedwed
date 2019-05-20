@@ -46,6 +46,7 @@ const places = [
     name: "Domaine de Sarson",
     image: "./assets/images/sarson1.jpg",
     number: "num3",
+    pic1: "./assets/images/sarson6.png",
     pic2: "./assets/images/sarson2.jpeg",
     pic3: "./assets/images/sarson3.jpg",
     pic4: "./assets/images/sarson4.jpg",
@@ -89,10 +90,12 @@ const places = [
     name: "Domaine de Paguy",
     image: "./assets/images/paguy1.png",
     number: "num6",
+    pic1: "./assets/images/paguy5.jpg",
     pic2: "./assets/images/paguy1.png",
     pic3: "./assets/images/paguy2.png",
     pic4: "./assets/images/paguy3.png",
     pic5: "./assets/images/paguy4.png",
+    pic6: "./assets/images/paguy6.jpg",
     link:
       "https://www.mariages.net/domaine-mariage/le-domaine-de-paguy--e120932",
     lat: 43.97882,
@@ -149,9 +152,51 @@ const places = [
     pic4: "./assets/images/salettes4.jpg",
     pic5: "./assets/images/salettes5.jpg",
     pic6: "./assets/images/salettes1.jpg",
-    link: "1205 Route du Château, 26450 Charols, France",
+    link: "https://www.mariages.net/chateau-mariage/chateau-les-oliviers-de-salettes--e151002",
     lat: 44.58727,
     long: 4.9691
+  },
+  {
+    name: "Chateau de Garde",
+    image: "./assets/images/garde1.jpg",
+    number: "num11",
+    pic1: "./assets/images/garde6.jpg",
+    pic2: "./assets/images/garde2.jpg",
+    pic3: "./assets/images/garde3.jpg",
+    pic4: "./assets/images/garde4.jpg",
+    pic5: "./assets/images/garde5.jpg",
+    pic6: "./assets/images/garde1.jpg",
+    link: "https://chateaudegarde.com/en/",
+    lat: 44.855567,
+    long: -0.256459
+  },
+  {
+    name: "Les Mejeonnes",
+    image: "./assets/images/mejeonnes1.jpg",
+    number: "num12",
+    pic1: "./assets/images/mejeonnes6.jpg",
+    pic2: "./assets/images/mejeonnes2.jpg",
+    pic3: "./assets/images/mejeonnes3.jpg",
+    pic4: "./assets/images/mejeonnes4.jpg",
+    pic5: "./assets/images/mejeonnes5.jpg",
+    pic6: "./assets/images/mejeonnes1.jpg",
+    link: "https://www.mariages.net/domaine-mariage/les-mejeonnes--e142044",
+    lat: 44.419763,
+    long: 4.789518
+  },
+  {
+    name: "Chateau de Poudenas",
+    image: "./assets/images/poud1.jpg",
+    number: "num13",
+    pic1: "./assets/images/poud6.jpg",
+    pic2: "./assets/images/poud2.jpg",
+    pic3: "./assets/images/poud3.jpg",
+    pic4: "./assets/images/poud4.jpg",
+    pic5: "./assets/images/poud5.jpg",
+    pic6: "./assets/images/poud1.jpg",
+    link: "https://www.mariages.net/chateau-mariage/chateau-de-poudenas--e125863",
+    lat: 44.046818,
+    long: 0.208796
   }
 ];
 
@@ -196,7 +241,7 @@ function showContent() {
       $(".locations").empty();
       topFunction();
 
-      var detailsName = $("<h1>");
+      var detailsName = $("<h2>");
       detailsName.text(element.name);
       $(".firstRow").append(detailsName);
 
@@ -225,10 +270,15 @@ function showContent() {
       placeImg.addClass("detailsImg");
       $(".imgDiv").append(placeImg);
 
-      var detName = $("<h3>");
-      detName.text("Advantages");
-      $(".textDiv").append(detName);
 
+      var link = $("<a>");
+      link.text("See more details");
+      link.attr("href", element.link);
+      link.attr("target", "blank");
+      link.addClass("btn6 hvr-float-shadow");
+      $(".link").append(link);
+
+      
       initMap();
       function initMap() {
         // The location of Uluru
