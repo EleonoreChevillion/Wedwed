@@ -22,6 +22,7 @@ footer {
 }
 .navbar {
   background: none;
+  float: right;
 }
 #navbarSupportedContent {
   font-size: xx-large;
@@ -42,7 +43,6 @@ footer {
   background-color: rgb(255, 126, 115);
   color: #5d5c5c !important;
   transform: scale(1.2);
-  border: none;
 }
 
 .btn-outline-success {
@@ -88,6 +88,11 @@ h4 {
 #mainCont {
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.gif-btn {
+  color: white;
+  font-weight: bold;
 }
 /* #add-meme {
   border: none;

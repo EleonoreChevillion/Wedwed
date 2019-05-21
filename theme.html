@@ -1,59 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Thasadith"
+      rel="stylesheet"
+    />
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!-- Custom CSS Stylesheets. Main -->
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/main.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-    <!-- Page Icon -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-    <title>Pumpkin and Pickle | {{title}}</title>
-<link rel="stylesheet" type="text/css" media="screen" href="/assets/style/theme.css">
-</head>
+    <link rel="stylesheet" href="./assets/style/theme.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- <div id="background"></div> -->
+    <div class="row">
+      <div class="col-sm-1">
+        <img class="logo" src="./assets/images/Picture1.png" alt="logo" />
+      </div>
+      <div class="col-md-4"></div>
+      <div class="col-md-7">
+        <nav class="navbar navbar-expand-lg">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="home.html"
+                  >Home<span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="location.html">Places</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="theme.html">Theme</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="selection.html">Selection</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="memes.html">Gifs</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <br /><br /><br /><br />
 
-<body>
+    <div class="mainDiv">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>Colours</h1>
+          <div class="row">
+            <div class="column">
+              <img src="./assets/images/colors1.PNG" />
+              <img src="./assets/images/colors5.PNG" />
+            </div>
+            <div class="column">
+              <img src="./assets/images/colors2.PNG" />
+              <img src="./assets/images/colors6.PNG" />
+            </div>
+            <div class="column">
+              <img src="./assets/images/colors3.PNG" />
+              <img src="./assets/images/colors7.jpg" />
+            </div>
+            <div class="column">
+              <img src="./assets/images/colors4.PNG" />
+              <img src="./assets/images/colors8.PNG" />
+            </div>
+          </div>
+          <br /><br />
+          <h1>Theme</h1>
+          <div class="row">
+            <div class="column">
+              <img src="./assets/images/theme1.jpg" />
+              <img src="./assets/images/theme2.jpg" />
+              <img src="./assets/images/theme3.jpg" />
+              <img src="./assets/images/theme4.jpg" />
+            </div>
+            <div class="column">
+              <img src="./assets/images/theme5.jpg" />
+              <img src="./assets/images/theme6.jpg" />
+              <img src="./assets/images/theme7.jpg" />
+              <img src="./assets/images/theme8.jpg" />
+            </div>
+            <div class="column">
+              <img src="./assets/images/theme9.jpg" />
+              <img src="./assets/images/theme10.PNG" />
+              <img src="./assets/images/theme11.PNG" />
+              <img src="./assets/images/theme12.PNG" />
+              <img src="./assets/images/theme17.PNG" />
+            </div>
+            <div class="column">
+              <img src="./assets/images/theme13.PNG" />
+              <img src="./assets/images/theme14.PNG" />
+              <img src="./assets/images/theme15.PNG" />
+              <img src="./assets/images/theme16.PNG" />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h1>My List</h1>
+          <br />
 
+          <input type="text" id="person-input" />
+          <br />
+          <input
+            id="add-person"
+            type="submit"
+            value="Add person"
+            class="btn btn-outline-success"
+          />
 
+          <br /><br /><br />
+          <div class="row nameDiv">
+            <div class="col-md-4 firstcol"></div>
+            <div class="col-md-4 seccol"></div>
+            <div class="col-md-4 thirdcol"></div>
+          </div>
+          <h1 id="totalListe"></h1>
 
-    <br></br>
+          <!-- <div class="row">
+            <div class="myList"></div>
+          </div> -->
+        </div>
+      </div>
+    </div>
 
-
+    <br />
+    <br /><br /><br /><br />
     <footer class="fixed-bottom">
-        <h6>Tomonore</h6>
+      <img src="./assets/images/nav.png" alt="" />
+      <img src="./assets/images/nav.png" alt="" />
+      <img src="./assets/images/nav.png" alt="" />
+      <img src="./assets/images/nav.png" alt="" />
+      <img src="./assets/images/nav.png" alt="" />
     </footer>
 
     <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.0.js"
-        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.js"
+      integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+      crossorigin="anonymous"
+    ></script>
     <!-- Bootstrap JQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
     <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
     <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
     <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.0.js"
-        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
-</body>
-
-
-
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.js"
+      integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/javascript/theme.js"></script>
+  </body>
 </html>

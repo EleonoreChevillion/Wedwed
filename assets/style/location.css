@@ -32,11 +32,12 @@ body {
 footer {
   text-align: center;
   background-color: white;
+  padding-top: 10px;
   opacity: 0.9;
-  margin-top: 50px;
 }
 .navbar {
   background: none;
+  float: right;
 }
 #navbarSupportedContent {
   font-size: xx-large;
@@ -58,7 +59,6 @@ footer {
   color: #5d5c5c !important;
   transform: scale(1.2);
 }
-
 .fancy-cardss {
   text-align: center;
   margin: 80px auto;
@@ -204,7 +204,7 @@ h3 {
 }
 
 h3 {
-  color:#5d5c5c ;
+  color: #5d5c5c;
 }
 
 .detailsDiv {
@@ -215,21 +215,22 @@ h3 {
   padding: 8px;
 }
 
-.btn6, .btn6:link, .btn6:visited {
+.btn6,
+.btn6:link,
+.btn6:visited {
   padding: 13px 0;
   border: 1px solid white;
-  color:  rgb(255, 126, 115);
+  color: rgb(255, 126, 115);
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 3px;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 80px;
 }
-  
-  .btn6:hover {
-    background: #5d5c5c;
-    border: 1px solid white;
-    color: rgb(255, 126, 115);
-    border-radius: 30px;
-  }
+
+.btn6:hover {
+  background: #5d5c5c;
+  border: 1px solid white;
+  color: rgb(255, 126, 115);
+  border-radius: 30px;
 }

@@ -21,6 +21,7 @@ footer {
 }
 .navbar {
   background: none;
+  float: right;
 }
 #navbarSupportedContent {
   font-size: xx-large;
@@ -29,7 +30,7 @@ footer {
   width: 100%;
 }
 .nav-link:active {
-  background-color: #04bab5;
+  background-color: #abadad;
 }
 
 .nav-link {
