@@ -1,4 +1,4 @@
-let liste = [
+let guests = [
   "Omi",
   "Papi",
   "Mami",
@@ -52,51 +52,56 @@ let liste = [
 addNames();
 $("#add-person").on("click", function(event) {
   event.preventDefault();
-  liste = [];
+
   var newperson = $("#person-input")
     .val()
     .trim();
-  liste.push(newperson);
-
+  guests.push(newperson);
+  document.getElementById("person-input").value = "";
+  $(".col").empty();
   addNames();
 });
+// function addNames() {
+//   Object.defineProperty(Array.prototype, "chunk", {
+//     value: function(chunkSize) {
+//       var that = this;
+//       return Array(Math.ceil(that.length / chunkSize))
+//         .fill()
+//         .map(function(_, i) {
+//           return that.slice(i * chunkSize, i * chunkSize + chunkSize);
+//         });
+//     }
+//   });
+
+//   // Split in 3 groups
+//   let result = guests.chunk(guests.length / 3);
+
+//   let firstArr = result[0];
+//   let secondArr = result[1];
+//   let thirdArr = result[2];
+//   console.log(result);
+
+//   console.log(firstArr);
 function addNames() {
-  Object.defineProperty(Array.prototype, "chunk", {
-    value: function(chunkSize) {
-      var that = this;
-      return Array(Math.ceil(that.length / chunkSize))
-        .fill()
-        .map(function(_, i) {
-          return that.slice(i * chunkSize, i * chunkSize + chunkSize);
-        });
+  //   guests.forEach(function(x) {
+  //     let prenom = $("<h4>");
+  //     prenom.text(x);
+  //     prenom.addClass("col-md-4");
+  //     $(".col").append(prenom);
+  //   });
+
+  for (let i = 0; i < guests.length; i++) {
+    let prenom = $("<h4>");
+    prenom.text(guests[i]);
+    if (i < 20) {
+      $("#col1").append(prenom);
+    } else if (20 < i < 40) {
+      $("#col2").append(prenom);
+    } else {
+      $("#col3").append(prenom);
     }
-  });
+  }
 
-  // Split in 3 groups
-  let result = liste.chunk(liste.length / 3);
-
-  let firstArr = result[0];
-  let secondArr = result[1];
-  let thirdArr = result[2];
-  console.log(result);
-
-  console.log(firstArr);
-  firstArr.forEach(function(elem) {
-    let prenom = $("<h4>");
-    prenom.text(elem);
-    $(".firstcol").append(prenom);
-  });
-
-  secondArr.forEach(function(elem) {
-    let prenom = $("<h4>");
-    prenom.text(elem);
-    $(".seccol").append(prenom);
-  });
-  thirdArr.forEach(function(elem) {
-    let prenom = $("<h4>");
-    prenom.text(elem);
-    $(".thirdcol").append(prenom);
-  });
+  $("#totalguests").text("TOTAL GUESTS: " + guests.length);
+  console.log(guests);
 }
-
-$("#totalListe").text("TOTAL GUESTS: " + liste.length);
