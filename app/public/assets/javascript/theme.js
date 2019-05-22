@@ -61,38 +61,12 @@ $("#add-person").on("click", function(event) {
   $(".col").empty();
   addNames();
 });
-// function addNames() {
-//   Object.defineProperty(Array.prototype, "chunk", {
-//     value: function(chunkSize) {
-//       var that = this;
-//       return Array(Math.ceil(that.length / chunkSize))
-//         .fill()
-//         .map(function(_, i) {
-//           return that.slice(i * chunkSize, i * chunkSize + chunkSize);
-//         });
-//     }
-//   });
 
-//   // Split in 3 groups
-//   let result = guests.chunk(guests.length / 3);
-
-//   let firstArr = result[0];
-//   let secondArr = result[1];
-//   let thirdArr = result[2];
-//   console.log(result);
-
-//   console.log(firstArr);
 function addNames() {
-  //   guests.forEach(function(x) {
-  //     let prenom = $("<h4>");
-  //     prenom.text(x);
-  //     prenom.addClass("col-md-4");
-  //     $(".col").append(prenom);
-  //   });
-
   for (let i = 0; i < guests.length; i++) {
     let prenom = $("<h4>");
-
+    prenom.attr("id", guests[i]);
+    prenom.attr("data-index", i);
     prenom.text(guests[i]);
     let total = guests.length;
     if (i < total / 3) {
@@ -102,6 +76,13 @@ function addNames() {
     } else {
       $("#col3").append(prenom);
     }
+
+    $("#" + guests[i]).click(function() {
+      var itemIndex = this.getAttribute("data-index");
+      guests.splice(itemIndex, 1);
+      $(".col").empty();
+      addNames();
+    });
   }
 
   $("#totalguests").text("TOTAL GUESTS: " + guests.length);
