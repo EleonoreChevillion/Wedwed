@@ -34,3 +34,24 @@ module.exports = function(app) {
     });
   });
 };
+const db = require("../../models");
+module.exports = function(app) {
+  app.get("/home", async (req, res) => {
+    res.render("home", { title: "Home" });
+  });
+  app.get("/", async (req, res) => {
+    res.render("home", { title: "Home" });
+  });
+  app.get("/location", async (req, res) => {
+    res.render("location", { title: "Locations" });
+  });
+  app.get("/theme", async (req, res) => {
+    res.render("theme", { title: "Theme" });
+  });
+  app.get("/myselection", async (req, res) => {
+    res.render("selection", { title: "MySelection" });
+  });
+  app.get("/gifs", async (req, res) => {
+    res.render("memes", { title: "Gifs" });
+  });
+};

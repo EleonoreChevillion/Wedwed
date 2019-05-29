@@ -4,12 +4,7 @@
     "password": null,
     "database": "sequelize_guests",
     "host": "127.0.0.1",
-    "dialect": "mysql",
-    "dialectOptions": {
-      "socketPath": "/Applications/MAMP/tmp/mysql/mysql.sock",
-      "supportBigNumbers": true,
-      "bigNumberStrings": true
-    }
+    "dialect": "mysql"
   },
   "test": {
     "username": "root",

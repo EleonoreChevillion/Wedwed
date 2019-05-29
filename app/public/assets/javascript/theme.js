@@ -57,6 +57,11 @@ $("#add-person").on("click", function(event) {
     .val()
     .trim();
   guests.push(newperson);
+  $.ajax({
+    method: "POST",
+    url: "/api/new/",
+    data: newperson
+  }).then(console.log("adding someone"));
   document.getElementById("person-input").value = "";
   $(".col").empty();
   addNames();
